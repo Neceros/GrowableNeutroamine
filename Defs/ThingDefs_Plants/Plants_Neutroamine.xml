@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="PlantBase">
+  <defName>NeutroaminePlant</defName>
+  <label>neutroamine plant</label>
+  <description>A slow-growing plant which yields Neutroamine when harvested. Smells really bad, and produces a ghastly stench.</description>
+  <graphicData>
+    <texPath>NeutroaminePlant</texPath>
+    <graphicClass>Graphic_Random</graphicClass>
+  </graphicData>
+  <statBases>
+    <MaxHitPoints>85</MaxHitPoints>
+    <Nutrition>0.1</Nutrition>
+  </statBases>
+  <selectable>true</selectable>
+  <pathCost>10</pathCost>
+  <plant>
+    <growDays>5.0</growDays>
+    <dieIfLeafless>true</dieIfLeafless>
+    <harvestTag>Standard</harvestTag>
+    <harvestedThingDef>Neutroamine</harvestedThingDef>
+    <harvestYield>1</harvestYield>
+    <sowMinSkill>10</sowMinSkill>
+    <sowTags>
+      <li>Ground</li>
+      <li>Hydroponic</li>
+    </sowTags>
+    <topWindExposure>0.1</topWindExposure>
+    <visualSizeRange>0.3~1.0</visualSizeRange>
+  </plant>
+</ThingDef>
+
+</Defs>
